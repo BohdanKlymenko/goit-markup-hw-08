@@ -1,0 +1,28 @@
+.address-section {
+  max-width: 270px;
+}
+.footer__address-section {
+  margin-right: 70px;
+}
+
+.address {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__address {
+  margin-top: 20px;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address--map {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--alt-text-color);
+}

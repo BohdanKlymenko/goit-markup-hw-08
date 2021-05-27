@@ -1,0 +1,25 @@
+.title {
+  color: var(--title-color);
+}
+
+.page-title {
+  max-width: 696px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--alt-title-color);
+}
+
+.gallery__title,
+.team__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+}

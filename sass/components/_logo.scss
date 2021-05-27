@@ -1,0 +1,28 @@
+.logo {
+  font-family: var(--logo-font);
+  font-weight: bold;
+  text-transform: none;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--alt-title-color);
+
+  &:hover,
+  &:focus {
+    color: var(--alt-title-color);
+  }
+}
+.logo__span {
+  color: var(--accent-color);
+}
+
+.header__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: var(--logo-color);
+
+  &:hover,
+  &:focus {
+    color: var(--logo-color);
+  }
+}
