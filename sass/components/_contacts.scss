@@ -7,7 +7,7 @@
   color: var(--main-text-color);
 }
 
-.header__contacts:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
