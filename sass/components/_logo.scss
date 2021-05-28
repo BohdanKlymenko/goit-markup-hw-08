@@ -2,9 +2,14 @@
   font-family: var(--logo-font);
   font-weight: bold;
   text-transform: none;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: var(--alt-title-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 
   &:hover,
   &:focus {
@@ -17,9 +22,14 @@
 
 .header__logo {
   margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: var(--logo-color);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 
   &:hover,
   &:focus {

@@ -6,9 +6,13 @@
   margin-bottom: 12px;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: var(--title-color);
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .form__field {
@@ -44,7 +48,7 @@
 }
 
 .form__input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -67,7 +71,7 @@
 }
 
 .form__comment {
-  width: 448px;
+  width: 100%;
   height: 120px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -91,22 +95,30 @@
 }
 
 .checkbox {
-  margin-left: 12px;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .checkbox__label {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.67;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   &::before {
     content: ' ';
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin-right: 9px;
+    margin-right: 8px;
     border: 2px solid var(--title-color);
     border-radius: 4px;
     transition: background-color 250ms var(--timing-function);
@@ -123,7 +135,12 @@
   }
 }
 
+.checkbox__text {
+  display: inline-block;
+  height: 14px;
+}
+
 .checkbox__link {
   color: var(--accent-color);
-  margin-left: 4px;
+  height: 14px;
 }

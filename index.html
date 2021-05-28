@@ -18,14 +18,14 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <div class="header--positioning">
           <nav class="nav header__nav">
             <a class="link logo header__logo" href="./">
               <span class="logo__span">Web</span>Studio</a
             >
-            <ul class="list menu">
+            <!-- <ul class="list menu">
               <li class="menu__item">
                 <a
                   class="link menu__link menu__link--active"
@@ -39,9 +39,14 @@
               <li class="menu__item">
                 <a class="link menu__link" href="#contacts">Контакты</a>
               </li>
-            </ul>
+            </ul> -->
           </nav>
-          <ul class="list contacts">
+          <button class="mobile-menu__btn">
+            <svg class="mobile-menu__svg" width="40" height="40">
+              <use href="./images/icons/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <!-- <ul class="list contacts">
             <li class="contacts__item header__contacts">
               <a class="link contacts__link" href="mailto:info@devstudio.com">
                 <svg
@@ -66,77 +71,116 @@
                 +38 096 111 11 11</a
               >
             </li>
-          </ul>
+          </ul> -->
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close">
+              <svg class="mobile-menu__svg-close" width="18" height="18">
+                <use href="./images/icons/sprite.svg#icon-menu-close"></use>
+              </svg>
+            </button>
+            <div class="mobile-menu__container">
+              <ul class="list mobile-menu__list">
+                <li class="mobile-menu__item">
+                  <a
+                    class="link mobile-menu__link menu__link--active"
+                    href="./index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link mobile-menu__link" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link mobile-menu__link" href="#contacts"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </header> -->
-    <!-- <main> -->
-    <section class="section hero">
-      <div class="container">
-        <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="btn" type="button" data-modal-open>
-          Заказать услугу
-        </button>
-      </div>
-    </section>
-    <section class="section advantages">
-      <div class="container">
-        <h2 class="advantages__title visually-hidden">Преимущества</h2>
-        <ul class="list advantages__list">
-          <li class="advantages__item">
-            <a href="#" class="link advantages__link">
-              <svg class="advantages__icons-svg" width="70" height="70">
-                <use href="./images/icons/sprite.svg#icon-antenna"></use>
-              </svg>
-            </a>
-            <h3 class="title advantages__other-title">Внимание к деталям</h3>
-            <p class="advantages__text">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <li class="advantages__item">
-            <a href="#" class="link advantages__link">
-              <svg class="advantages__icons-svg" width="70" height="70">
-                <use href="./images/icons/sprite.svg#icon-clock"></use>
-              </svg>
-            </a>
-            <h3 class="title advantages__other-title">Пунктуальность</h3>
-            <p class="advantages__text">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li class="advantages__item">
-            <a href="#" class="link advantages__link">
-              <svg class="advantages__icons-svg" width="70" height="70">
-                <use href="./images/icons/sprite.svg#icon-diagram"></use>
-              </svg>
-            </a>
-            <h3 class="title advantages__other-title">Планирование</h3>
-            <p class="advantages__text">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li class="advantages__item">
-            <a href="#" class="link advantages__link">
-              <svg class="advantages__icons-svg" width="70" height="70">
-                <use href="./images/icons/sprite.svg#icon-astronaut"></use>
-              </svg>
-            </a>
-            <h3 class="title advantages__other-title">
-              Современные технологии
-            </h3>
-            <p class="advantages__text">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- <section class="section gallery" id="portfolio">
+    </header>
+
+    <main>
+      <section class="section hero">
+        <div class="container">
+          <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
+          <button class="btn" type="button" data-modal-open>
+            Заказать услугу
+          </button>
+        </div>
+      </section>
+      <section class="section advantages">
+        <div class="container">
+          <h2 class="advantages__title visually-hidden">Преимущества</h2>
+          <ul class="list advantages__list">
+            <li class="advantages__item">
+              <a href="#" class="link advantages__link">
+                <svg class="advantages__icons-svg" width="70" height="70">
+                  <use href="./images/icons/sprite.svg#icon-antenna"></use>
+                </svg>
+              </a>
+              <div class="advantages__info">
+                <h3 class="title advantages__other-title">
+                  Внимание к деталям
+                </h3>
+                <p class="advantages__text">
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <a href="#" class="link advantages__link">
+                <svg class="advantages__icons-svg" width="70" height="70">
+                  <use href="./images/icons/sprite.svg#icon-clock"></use>
+                </svg>
+              </a>
+              <div class="advantages__info">
+                <h3 class="title advantages__other-title">Пунктуальность</h3>
+                <p class="advantages__text">
+                  Задача организации, в особенности же рамки и место обучения
+                  кадров влечет за собой.
+                </p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <a href="#" class="link advantages__link">
+                <svg class="advantages__icons-svg" width="70" height="70">
+                  <use href="./images/icons/sprite.svg#icon-diagram"></use>
+                </svg>
+              </a>
+              <div class="advantages__info">
+                <h3 class="title advantages__other-title">Планирование</h3>
+                <p class="advantages__text">
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <a href="#" class="link advantages__link">
+                <svg class="advantages__icons-svg" width="70" height="70">
+                  <use href="./images/icons/sprite.svg#icon-astronaut"></use>
+                </svg>
+              </a>
+              <div class="advantages__info">
+                <h3 class="title advantages__other-title">
+                  Современные технологии
+                </h3>
+                <p class="advantages__text">
+                  Значимость этих проблем настолько очевидна, что реализация
+                  плановых заданий.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section gallery" id="portfolio">
         <div class="container">
           <h2 class="title gallery__title">Чем мы занимаемся</h2>
           <ul class="list gallery__list">
@@ -181,16 +225,16 @@
             </li>
           </ul>
         </div>
-      </section> -->
-    <!-- <section class="section team" id="studio">
+      </section>
+      <section class="section team" id="studio">
         <div class="container">
           <h2 class="title team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
               <img
                 src="./images/team/img-1.jpg"
+                class="team__img"
                 width="270"
-                height="260"
                 alt="Игорь Демьяненко"
               />
               <div class="team__item-text">
@@ -259,8 +303,8 @@
             <li class="team__item">
               <img
                 src="./images/team/img-2.jpg"
+                class="team__img"
                 width="270"
-                height="260"
                 alt="Ольга Репина"
               />
               <div class="team__item-text">
@@ -329,8 +373,8 @@
             <li class="team__item">
               <img
                 src="./images/team/img-3.jpg"
+                class="team__img"
                 width="270"
-                height="260"
                 alt="Николай Тарасов"
               />
               <div class="team__item-text">
@@ -399,8 +443,8 @@
             <li class="team__item">
               <img
                 src="./images/team/img-4.jpg"
+                class="team__img"
                 width="270"
-                height="260"
                 alt="Михаил Ермаков"
               />
               <div class="team__item-text">
@@ -468,8 +512,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-    <!-- <section class="section">
+      </section>
+      <section class="section">
         <div class="container clients">
           <h2 class="title clients__title">Постоянные клиенты</h2>
           <ul class="list clients__list">
@@ -517,8 +561,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-    <!-- </main> -->
+      </section>
+    </main>
     <!-- <footer class="footer" id="contacts">
       <div class="container footer--positioning">
         <div class="address-section footer__address-section">
@@ -715,7 +759,7 @@
               required
             />
             <label for="checkbox" class="checkbox__label">
-              Соглашаюсь с рассылкой и принимаю
+              <p class="checkbox__text">Соглашаюсь с рассылкой и принимаю</p>
               <a href="#" class="checkbox__link">Условия договора</a>
             </label>
           </div>

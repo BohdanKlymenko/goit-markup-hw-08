@@ -1,0 +1,19 @@
+.mobile-menu__btn {
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-menu__btn-close {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.mobile-menu__svg-close {
+  fill: var(--title-color);
+
+  .mobile-menu__btn-close:hover &,
+  .mobile-menu__svg-close:focus & {
+    fill: var(--accent-color);
+  }
+}
