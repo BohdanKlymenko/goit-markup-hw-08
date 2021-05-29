@@ -1,21 +1,31 @@
 .card-set {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .portfolio__card-set {
-  margin-left: -30px;
-  margin-top: -30px;
+  @media screen and (min-width: 768px) {
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .card-set__item {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 3 * 30px) / 3);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
 }
 
 .card-set__link {
-  display: block;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
@@ -62,6 +72,7 @@
 }
 
 .card-set__projects-title {
+  flex-grow: 1;
   margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
@@ -76,6 +87,9 @@
 }
 
 .card-set__info {
+  display: flex;
+  flex-direction: column;
+
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
