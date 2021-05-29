@@ -34,7 +34,19 @@
 }
 
 .social-icons-section {
-  max-width: 208px;
+  max-width: 100%;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 208px;
+  }
 }
 
 .footer__social-icons-section {
