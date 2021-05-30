@@ -245,12 +245,20 @@
           <ul class="list gallery__list">
             <li class="gallery__item">
               <div class="gallery__img">
-                <img
-                  src="./images/photo/img1.jpg"
-                  width="370"
-                  height="294"
-                  alt="Разработка веб-страници"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images/gallery/desktop/what-we-do/box1.jpg    1x,
+                      images/gallery/desktop/what-we-do/box1@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/jpeg" />
+                  <img
+                    src="./images/gallery/desktop/what-we-do/box1.jpg"
+                    width="370"
+                    height="294"
+                    alt="Разработка веб-страници"
+                /></picture>
                 <div class="gallery__info">
                   <p class="gallery__text">Десктопные приложения</p>
                 </div>
@@ -258,12 +266,20 @@
             </li>
             <li class="gallery__item">
               <div class="gallery__img">
-                <img
-                  src="./images/photo/img2.jpg"
-                  width="370"
-                  height="294"
-                  alt="Адаптация для мобильных устройств"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images/gallery/desktop/what-we-do/box-2.jpg    1x,
+                      images/gallery/desktop/what-we-do/box-2@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/jpeg" />
+                  <img
+                    src="./images/gallery/desktop/what-we-do/box-2.jpg"
+                    width="370"
+                    height="294"
+                    alt="Разработка веб-страници"
+                /></picture>
                 <div class="gallery__info">
                   <p class="gallery__text">Мобильные приложения</p>
                 </div>
@@ -271,12 +287,20 @@
             </li>
             <li class="gallery__item">
               <div class="gallery__img">
-                <img
-                  src="./images/photo/img3.jpg"
-                  width="370"
-                  height="294"
-                  alt="Разработка графики"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images/gallery/desktop/what-we-do/box-3.jpg    1x,
+                      images/gallery/desktop/what-we-do/box-3@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/jpeg" />
+                  <img
+                    src="./images/gallery/desktop/what-we-do/box-3.jpg"
+                    width="370"
+                    height="294"
+                    alt="Разработка веб-страници"
+                /></picture>
                 <div class="gallery__info">
                   <p class="gallery__text">Дизайнерские решения</p>
                 </div>
@@ -290,13 +314,38 @@
           <h2 class="title team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img
-                src="./images/team/img-1.jpg"
-                class="team__img"
-                width="450"
-                alt="Игорь Демьяненко"
-              />
-
+              <picture>
+                <source
+                  srcset="
+                    images/gallery/desktop/team/ourteam-1.jpg    1x,
+                    images/gallery/desktop/team/ourteam-1@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    images/gallery/tablet/team/ourteam-1.jpg    1x,
+                    images/gallery/tablet/team/ourteam-1@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    images/gallery/mobile/team/ourteam-1.jpg    1x,
+                    images/gallery/mobile/team/ourteam-1@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/gallery/mobile/team/ourteam-1.jpg"
+                  class="team__img"
+                  width="450"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <div class="team__item-text">
                 <h3 class="title team__item-name">Игорь Демьяненко</h3>
                 <p class="team__item-position">Product Designer</p>
@@ -361,12 +410,38 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/img-2.jpg"
-                class="team__img"
-                width="450"
-                alt="Ольга Репина"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/gallery/desktop/team/ourteam-2.jpg    1x,
+                    images/gallery/desktop/team/ourteam-2@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    images/gallery/tablet/team/ourteam-2.jpg    1x,
+                    images/gallery/tablet/team/ourteam-2@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    images/gallery/mobile/team/ourteam-2.jpg    1x,
+                    images/gallery/mobile/team/ourteam-2@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/gallery/mobile/team/ourteam-2.jpg"
+                  class="team__img"
+                  width="450"
+                  alt="Ольга Репина"
+                />
+              </picture>
               <div class="team__item-text">
                 <h3 class="title team__item-name">Ольга Репина</h3>
                 <p class="team__item-position">Frontend Developer</p>
@@ -431,12 +506,38 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/img-3.jpg"
-                class="team__img"
-                width="450"
-                alt="Николай Тарасов"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/gallery/desktop/team/ourteam-3.jpg    1x,
+                    images/gallery/desktop/team/ourteam-3@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    images/gallery/tablet/team/ourteam-3.jpg    1x,
+                    images/gallery/tablet/team/ourteam-3@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    images/gallery/mobile/team/ourteam-3.jpg    1x,
+                    images/gallery/mobile/team/ourteam-3@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/gallery/mobile/team/ourteam-3.jpg"
+                  class="team__img"
+                  width="450"
+                  alt="Николай Тарасов"
+                />
+              </picture>
               <div class="team__item-text">
                 <h3 class="title team__item-name">Николай Тарасов</h3>
                 <p class="team__item-position">Marketing</p>
@@ -501,12 +602,38 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/img-4.jpg"
-                class="team__img"
-                width="450"
-                alt="Михаил Ермаков"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/gallery/desktop/team/ourteam-4.jpg    1x,
+                    images/gallery/desktop/team/ourteam-4@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    images/gallery/tablet/team/ourteam-4.jpg    1x,
+                    images/gallery/tablet/team/ourteam-4@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    images/gallery/mobile/team/ourteam-4.jpg    1x,
+                    images/gallery/mobile/team/ourteam-4@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/gallery/mobile/team/ourteam-4.jpg"
+                  class="team__img"
+                  width="450"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
               <div class="team__item-text">
                 <h3 class="title team__item-name">Михаил Ермаков</h3>
                 <p class="team__item-position">UI Designer</p>
@@ -819,8 +946,10 @@
               required
             />
             <label for="checkbox" class="checkbox__label">
-              <p class="checkbox__text">Соглашаюсь с рассылкой и принимаю</p>
-              <a href="#" class="checkbox__link">Условия договора</a>
+              <span class="checkbox__text">
+                Соглашаюсь с рассылкой и принимаю
+                <a href="#" class="checkbox__link">Условия договора</a></span
+              >
             </label>
           </div>
           <button type="submit" class="btn btn--animation">Отправить</button>
